@@ -4,13 +4,18 @@
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
   </head>
   <body>
-    <a-scene>
+    <a-scene  fog="type: linear; color: #cfd8dc; near: 30; far: 670">
     <a-assets>
       <a-asset-item id="Penguin" src="models/scene.gltf"></a-asset-item>
       <a-asset-item id="hut" src="models/hut/hut.gltf"></a-asset-item>
+      <a-asset-item id="tree" src="models/tree/scene.gltf"></a-asset-item>
     </a-assets>
 
-      <a-entity gltf-model="#hut" position="0 0 -20" scale="5 5 5"></a-entity>
+      <a-entity gltf-model="#tree" position="15 0 -13" scale="100 100 100"></a-entity>
+      <a-entity gltf-model="#tree" position="10 0 -13" scale="150 150 150"></a-entity>
+      <a-entity gltf-model="#tree" position="-15 0 -13" scale="100 100 100"></a-entity>
+      <a-entity gltf-model="#tree" position="-10 0 -13" scale="150 150 150"></a-entity>
+      <a-entity gltf-model="#hut" position="0 0 -30" scale="3 3 3"></a-entity>
       <a-entity gltf-model="#Penguin" position="5.5 0 -3" scale="8 8 8"></a-entity>
       <a-entity gltf-model="#Penguin" position="0 0 -5" scale="8 8 8"></a-entity>
       <a-entity gltf-model="#Penguin" position="-5.5 0 -3" scale="8 8 8"></a-entity>
